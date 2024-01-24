@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;400;700&family=Roboto+Serif:opsz,wght@8..144,100;8..144,400&family=Roboto:wght@100;300;500;700&display=swap');
+
+:root {
+    --cor-fonte: #292522;
+    --cor-destaques: rgb(172, 2, 2);
+    --cor-outro: #d6a692;
+    --cor-titulos: #a39081;
+    --cor-navegacao: #4d6160;
+    --cor-pagina: #f8efec;
+    --tam-titulo: 40px;
+    --tam-navegacao: 30px;
+    --tam-descricao: 20px;
+    --tam-fonte: 15px;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: var(--cor-fonte);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.2;
+    background-color: var(--cor-navegacao);
+}
+
+header {
+    background-color: var(--cor-fonte);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul{
+    border-bottom: 3px solid var(--cor-navegacao);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo {
+    width: 75px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.5); transition: 0.5s;
+}
+
+img.logo {
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none; padding-bottom: 3%;
+}
+
+li {
+    margin-bottom: 1%;
+}
+
+/* tamanho das imagens*/
+.iceberg  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+img {
+    width: 600px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.balao {
+    position: relative; display: inline-block;
+}
+
+.hidden {
+    display: none;
+    background-color: rgba(210, 159, 159, 0.5);
+    color: var(--cor-fonte);
+    font-size: 100%;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+button {
+    background-color: var(--cor-navegacao);
+    color: var(--cor-pagina);
+    font-family: "Roboto", sans-serif;
+    padding: 5px 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+button:hover {
+    background-color: var(--cor-fonte);
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* 
+b1 - Web Development | b2 - Programming Languages | b3 - Inglês | b4 - Database Management | b5 - Version Control | b6 - Comunicação | b7 - Trabalho em Equipe | b8 - Resolução de Problemas | b9 - Gerenciamento de Tempo | b10 - Adaptabilidade
+*/
+
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10 {
+    position: absolute; z-index: 2;
+}
+
+.b1 {top: 42%; right: 60%;}
+.b2 {top: 30%; right: 55%;}
+.b3 {top: 20%;}
+.b4 {top: 30%; left: 55%;}
+.b5 {top: 42%; left: 60%;}
+
+.b6 {bottom: 35%; right: 60%;}
+.b7 {bottom: 23%; right: 55%;}
+.b8 {bottom: 12%;}
+.b9 {bottom: 23%; left: 55%;}
+.b10 {bottom: 35%; left: 60%;}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 1%;
+    width: 100%;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Skills </title>
+    <link rel="stylesheet" href="/src/estilos/style-skills.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Mono:wght@200;400;700&family=Roboto+Serif:opsz,wght@8..144,100;8..144,400&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/src/portifolio.html">Portifólio</a></li>
+                <li><a href="/src/skills.html">Skills</a></li>
+                <li><a class="logo" href="/src/index.html" ><img class="logo" src="/src/imagens/logo.png" alt="logo"></a></li>
+                <li><a href="/src/cursos.html">Cursos Tech</a></li>
+                <li><a href="/src/contato.html">Contato</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <div class="iceberg">
+        <img id="myImg" src="/src/imagens/skills/iceberg2.png">
+        
+        <!-- PARTE DE CIMA -->
+        <a class="b1 balao">  
+            <button type="button" onclick="mostrarTexto('b1')"> Web Development</button>
+            <p id="textoExperiencia_b1" class="hidden"> Conhecimento em HTML, CSS, e JavaScript. Olha que legal essa página né?</p>
+        </a>
+        
+        <a class="b2 balao"> 
+            <button type="button" onclick="mostrarTexto('b2')"> Programming Languages </button>
+            <p id="textoExperiencia_b2" class="hidden"> Conhecimento Python e Java.</p>
+        </a>
+        
+        <a class="b3 balao"> 
+            <button type="button" onclick="mostrarTexto('b3')"> Inglês </button>
+            <p id="textoExperiencia_b3" class="hidden"> Nível B1: boa fala, leitura e comprensão. </p>
+        </a>
+
+        <a class="b4 balao"> 
+            <button type="button" onclick="mostrarTexto('b4')"> Database Management </button>
+            <p id="textoExperiencia_b4" class="hidden"> Conhecimento em linguagem SQL,  gerenciamento de bancos de dados, Postgree e Microsoft SQL Server</p>
+        </a>
+
+        <a class="b5 balao">
+            <button type="button" onclick="mostrarTexto('b5')"> Version Control </button>
+            <p id="textoExperiencia_b5" class="hidden"> Familiaridade com sistemas de controle de versão, como Git e Github.</p>
+        </a>
+
+        <!-- PARTE DE BAIXO -->
+        <a class="b6 balao">
+            <button type="button" onclick="mostrarTexto('b6')"> Comunicação </button>
+            <p id="textoExperiencia_b6" class="hidden">Capacidade de comunicar ideias de forma clara e eficiente, tanto verbalmente quanto por escrito.</p>
+        </a>
+
+        <a class="b7 balao"> 
+            <button type="button" onclick="mostrarTexto('b7')"> Trabalho em Equipe </button>
+            <p id="textoExperiencia_b7" class="hidden"> Tenho habilidade em colaborar e contribuir em equipes multidisciplinares, servindo de bastidores.</p>
+        </a>
+
+        <a class="b8 balao">
+            <button type="button" onclick="mostrarTexto('b8')"> Resolução de Problemas </button>
+            <p id="textoExperiencia_b8" class="hidden"> Posso identificar, analisar e resolver problemas de forma eficaz.</p>
+        </a>
+
+        <a class="b9 balao"> 
+            <button type="button" onclick="mostrarTexto('b9')"> Gerenciamento de Tempo </button>
+            <p id="textoExperiencia_b9" class="hidden"> Por ser metódica, possuo habilidade em organizar e gerenciar o tempo de forma eficaz para cumprir os objetivos.</p>
+        </a>
+        
+        <a class="b10 balao">
+            <button type="button" onclick="mostrarTexto('b10')"> Adaptabilidade </button>
+            <p id="textoExperiencia_b10" class="hidden">Prontidão para se adaptar a novas tecnologias, ambientes de trabalho e desafios interpessoais.</p>
+        </a>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2023 - Desenvolvido por Mariana Eslava </p>
+    </footer>
+    
+    <script src="/src/script-skills.js"></script>
+</body>
+</html>
